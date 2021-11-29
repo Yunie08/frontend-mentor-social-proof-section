@@ -1,0 +1,350 @@
+/* Color palette */
+/* Font family */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+/* Font sizes */
+/* Font weight */
+/* Letter spacing */
+/* Line height */
+/* General layout */
+/* Content width = layout-width - padding-container */
+html {
+  padding: 8rem 0;
+}
+
+body {
+  background: url(../../images/0yz0d21cp2v11.jpg);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  width: 100%;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.023rem;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.114rem;
+  color: #502050;
+}
+
+.container {
+  max-width: 117rem;
+  width: 100%;
+  margin: auto;
+  padding: 0 3rem;
+}
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 2.4rem;
+  }
+}
+
+.rating {
+  display: flex;
+  padding: 2rem 3.2rem;
+  margin: 0.8rem 0;
+  background-color: #f7f2f7;
+  border-radius: 0.8rem;
+  max-width: 44.5rem;
+  width: 100%;
+  min-width: fit-content;
+}
+@media screen and (max-width: 576px) {
+  .rating {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.6rem 3.2rem;
+  }
+}
+.rating__stars {
+  display: flex;
+  justify-content: space-between;
+  width: 11.7rem;
+  margin-right: 3.2rem;
+  align-self: center;
+}
+@media screen and (max-width: 576px) {
+  .rating__stars {
+    margin-right: 0;
+    margin-bottom: 1.6rem;
+  }
+}
+.rating__source {
+  font-weight: 700;
+  color: #502050;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  max-width: 35rem;
+  padding: 4rem 3.2rem;
+  background-color: #502050;
+  color: white;
+  border-radius: 0.8rem;
+}
+.quote__header {
+  display: flex;
+  align-items: center;
+  letter-spacing: none;
+  margin-bottom: 2.6rem;
+}
+.quote__header img {
+  border-radius: 50%;
+  width: 4rem;
+  margin-right: 2.3rem;
+}
+.quote__header__name {
+  font-weight: 700;
+  letter-spacing: none;
+  margin-bottom: 0.5rem;
+}
+.quote__header__verified {
+  color: #ee68a4;
+}
+.quote__body {
+  line-height: 2.2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  position: relative;
+  bottom: -40px;
+  text-align: center;
+  width: 100%;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.ratings {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1rem;
+  margin-bottom: 7.2rem;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .ratings {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+.ratings__text {
+  max-width: 44.5rem;
+}
+@media screen and (max-width: 992px) {
+  .ratings__text {
+    text-align: center;
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ratings__text {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ratings__text h1 {
+    font-size: 3.2rem;
+    width: 80%;
+    margin: auto;
+  }
+}
+.ratings__text p {
+  color: #937b92;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  margin-top: 1.6rem;
+}
+@media screen and (max-width: 992px) {
+  .ratings__text p {
+    margin-top: 2.2rem;
+  }
+}
+.ratings__examples {
+  max-width: 54rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-self: flex-end;
+}
+@media screen and (max-width: 992px) {
+  .ratings__examples {
+    margin: 4rem 0;
+  }
+}
+.ratings__examples > *:first-child {
+  align-self: flex-start;
+}
+@media screen and (max-width: 992px) {
+  .ratings__examples > *:first-child {
+    align-self: center;
+  }
+}
+.ratings__examples > *:nth-child(2) {
+  align-self: center;
+}
+@media screen and (max-width: 992px) {
+  .ratings__examples > *:nth-child(2) {
+    align-self: center;
+  }
+}
+.ratings__examples > *:nth-child(3) {
+  align-self: flex-end;
+}
+@media screen and (max-width: 992px) {
+  .ratings__examples > *:nth-child(3) {
+    align-self: center;
+  }
+}
+
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  grid-gap: 1rem;
+  width: 100%;
+  min-height: 26.6rem;
+}
+@media screen and (max-width: 992px) {
+  .quotes {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .quotes {
+    width: 100%;
+  }
+}
+.quotes > *:first-child {
+  margin-bottom: auto;
+}
+@media screen and (max-width: 992px) {
+  .quotes > *:first-child {
+    margin-right: auto;
+  }
+}
+.quotes > *:nth-child(2) {
+  margin: auto 0;
+}
+@media screen and (max-width: 992px) {
+  .quotes > *:nth-child(2) {
+    margin: 0 auto;
+  }
+}
+.quotes > *:nth-child(3) {
+  margin-top: auto;
+}
+@media screen and (max-width: 992px) {
+  .quotes > *:nth-child(3) {
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .quotes .quote {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .quotes .quote {
+    max-width: 50rem;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

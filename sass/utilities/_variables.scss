@@ -1,0 +1,43 @@
+/* Color palette */
+$color-primary-dark: hsl(300, 43%, 22%);
+$color-primary-light: hsl(333, 80%, 67%);
+$color-neutral-dark: hsl(303, 10%, 53%);
+$color-neutral-light: hsl(300, 24%, 96%);
+$color-neutral-white: hsl(0, 0%, 100%);
+
+/* Font family */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+/* Font sizes */
+$font-size-xl-mobile: 3.2rem;
+$font-size-xl-desktop: 4.8rem;
+$font-size-m: 1.5rem;
+$font-size-xs: 1.3rem;
+
+
+
+/* Font weight */
+$font-weight-400: 400; 
+$font-weight-500: 500; 
+$font-weight-700: 700; 
+
+/* Letter spacing */
+$letter-spacing-xl: -0.114rem;
+$letter-spacing-m: -0.05rem;
+$letter-spacing-xs: -0.023rem;
+
+@media screen and (min-width: 768px) {
+    $letter-spacing-xl: -0.171rem;
+}
+
+/* Line height */
+$line-height-none: 1;
+$line-height-base: 1.12;
+$line-height-m: 2.2rem;
+$line-height-xl: 2.5rem;
+
+/* General layout */
+/* Content width = layout-width - padding-container */
+$layout-width: 117rem;
+$padding-container-desktop: 0 3rem;
+$padding-container-mobile: 0 2.4rem;
