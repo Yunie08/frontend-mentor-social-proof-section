@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Git repository](https://github.com/Yunie08/frontend-mentor-social-proof-section.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [My solution - live](https://peaceful-brattain-ae9ed2.netlify.app/)
 
 ## My process
 
