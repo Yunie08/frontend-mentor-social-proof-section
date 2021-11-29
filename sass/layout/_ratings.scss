@@ -24,7 +24,7 @@
         }
         h1 {
             
-            @include mobile-only {
+            @include mobile-small {
                 font-size: $font-size-xl-mobile;
                 width: 80%;
                 margin: auto;

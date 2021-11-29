@@ -12,7 +12,14 @@ html {
 }
 
 body {
-  background: url(../../images/0yz0d21cp2v11.jpg);
+  background: url(../../images/bg-pattern-top-desktop.svg), url(../../images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background: url(../../images/bg-pattern-top-mobile.svg) no-repeat top left, url(../../images/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
+  }
 }
 
 /* Box sizing rules */
@@ -234,7 +241,7 @@ h1 {
     max-width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .ratings__text h1 {
     font-size: 3.2rem;
     width: 80%;

@@ -3,5 +3,16 @@ html {
 }
 
 body {
-    background: url(../../images/0yz0d21cp2v11.jpg);
+    background: url(../../images/bg-pattern-top-desktop.svg),
+            url(../../images/bg-pattern-bottom-desktop.svg);
+    
+    background-repeat: no-repeat,
+            no-repeat;
+    background-position: top left,
+            bottom right;
+
+    @include mobile-only {
+        background: url(../../images/bg-pattern-top-mobile.svg) no-repeat top left,
+            url(../../images/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
+    }
 }
