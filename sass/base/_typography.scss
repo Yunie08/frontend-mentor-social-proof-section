@@ -1,18 +1,15 @@
 body {
-    font-family: 'Spartan', sans-serif;
-    font-size: $font-size-xs;
-    font-weight: $font-weight-400;
-    line-height: $line-height-base;
-    letter-spacing: $letter-spacing-xs;
+  font-family: "Spartan", sans-serif;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-400;
+  line-height: $line-height-base;
+  letter-spacing: $letter-spacing-xs;
 }
 
 h1 {
-    font-size: $font-size-xl-desktop;
-    font-weight: $font-weight-700;
-    line-height: $line-height-none;
-    letter-spacing: $letter-spacing-xl;
-    color: $color-primary-dark;
+  font-size: $font-size-xl-desktop;
+  font-weight: $font-weight-700;
+  line-height: $line-height-none;
+  letter-spacing: $letter-spacing-xl;
+  color: $color-primary-dark;
 }
-
-
-

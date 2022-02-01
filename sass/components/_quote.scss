@@ -1,33 +1,32 @@
 .quote {
+  display: flex;
+  flex-direction: column;
+  max-width: 35rem;
+  padding: 4rem 3.2rem;
+  background-color: $color-primary-dark;
+  color: $color-neutral-white;
+  border-radius: 0.8rem;
+  &__header {
     display: flex;
-    flex-direction: column;
-    max-width: 35rem;
-    padding: 4rem 3.2rem; 
-    background-color: $color-primary-dark;
-    color: $color-neutral-white;
-    border-radius: 0.8rem;
-    &__header {
-        display: flex;
-        align-items: center;
-        letter-spacing: none;
-        margin-bottom: 2.6rem;
-        img {
-            border-radius: 50%;
-            width: 4rem;
-            margin-right: 2.3rem;
-        }
-        &__name {
-            font-weight: $font-weight-700;
-            letter-spacing: none;
-            margin-bottom: 0.5rem;
-        }
-        &__verified {
-            color: $color-primary-light;
-        }
+    align-items: center;
+    letter-spacing: none;
+    margin-bottom: 2.6rem;
+    img {
+      border-radius: 50%;
+      width: 4rem;
+      margin-right: 2.3rem;
     }
-    &__body {
-        line-height: $line-height-m;
-        font-weight: $font-weight-500;
+    &__name {
+      font-weight: $font-weight-700;
+      letter-spacing: none;
+      margin-bottom: 0.5rem;
     }
-    
+    &__verified {
+      color: $color-primary-light;
+    }
+  }
+  &__body {
+    line-height: $line-height-m;
+    font-weight: $font-weight-500;
+  }
 }
