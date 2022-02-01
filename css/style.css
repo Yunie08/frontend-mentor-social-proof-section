@@ -9,6 +9,7 @@
 /* Content width = layout-width - padding-container */
 html {
   padding: 8rem 0;
+  position: relative;
 }
 
 body {
@@ -202,8 +203,8 @@ h1 {
 
 .attribution {
   font-size: 11px;
-  position: relative;
-  bottom: -40px;
+  position: absolute;
+  bottom: 10px;
   text-align: center;
   width: 100%;
 }
